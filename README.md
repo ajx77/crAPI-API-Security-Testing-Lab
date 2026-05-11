@@ -1,8 +1,8 @@
 # 🔐 crAPI API Security Testing Lab
 
-## 📌 Objective
+## Project Overview
 
-Performed API security testing against crAPI using Burp Suite to identify authentication, authorization, business logic, and input validation weaknesses.
+This lab demonstrates API security testing against OWASP crAPI using Burp Suite to identify authentication, authorization, business logic, and input validation weaknesses.
 
 ---
 
@@ -34,11 +34,11 @@ Protected API endpoints correctly rejected requests without valid JWT tokens.
 
 ### 2. Business Logic Manipulation
 
-Modified order quantity values using Burp Repeater to analyze application behavior and credit deduction logic.
+Manipulated order quantity parameters through Burp Suite Repeater to test business logic validation and credit handling behavior.
 
 ### 3. Weak Input Validation
 
-Supplying invalid product IDs triggered HTTP 500 Internal Server Error responses instead of proper validation handling.
+Invalid product identifiers caused unhandled HTTP 500 responses, indicating insufficient server-side input validation and error handling.
 
 ### 4. API Workflow Analysis
 
@@ -50,7 +50,18 @@ Successfully analyzed:
 
 ---
 
-# 📷 Screenshots
+## Testing Workflow
+
+1. Authenticated to the crAPI application using valid credentials
+2. Intercepted API traffic using Burp Suite Proxy
+3. Replayed and modified requests in Burp Repeater
+4. Tested authentication and authorization enforcement
+5. Performed parameter tampering and input validation testing
+6. Analyzed API responses and application behavior
+
+---
+
+# Testing Evidence
 
 ## Login Request & JWT Token Response
 
@@ -109,3 +120,12 @@ Successfully analyzed:
 ## ⚠ Disclaimer
 
 This project was performed in a controlled lab environment using intentionally vulnerable applications for educational purposes only.
+
+---
+
+## Key Takeaways
+
+- Improved understanding of JWT-based authentication workflows
+- Practiced API request manipulation using Burp Suite
+- Learned how business logic vulnerabilities impact application security
+- Gained experience analyzing insecure API behaviors and error handling
