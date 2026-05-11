@@ -12,6 +12,7 @@ This lab demonstrates API security testing against OWASP crAPI using Burp Suite 
 - Kali Linux
 - Firefox Browser
 - crAPI Vulnerable API Application
+- JWT.io
 
 ---
 
@@ -105,15 +106,16 @@ Successfully analyzed:
 
 ---
 
-## 📚 Skills Demonstrated
+## Skills Demonstrated
 
 - API Security Testing
-- Burp Suite Repeater
-- JWT Analysis
+- JWT Authentication Analysis
 - Business Logic Testing
-- HTTP Request Manipulation
+- Request Manipulation
+- Authorization Testing
+- Burp Suite Repeater Usage
 - Input Validation Testing
-- Security Assessment Methodology
+- HTTP Request/Response Analysis
 
 ---
 
@@ -129,3 +131,9 @@ This project was performed in a controlled lab environment using intentionally v
 - Practiced API request manipulation using Burp Suite
 - Learned how business logic vulnerabilities impact application security
 - Gained experience analyzing insecure API behaviors and error handling
+
+---
+
+## Conclusion
+
+This lab improved practical understanding of API security testing, JWT authentication workflows, request manipulation, and business logic vulnerability analysis using Burp Suite and OWASP crAPI.
